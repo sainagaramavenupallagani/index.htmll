@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RideReady - Vehicle Rental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #0033cc, #6699ff);
+      color: white;
+    }
+    header {
+      background-color: #002080;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .form-box {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      color: black;
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .form-box input, .form-box select {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    .form-box button {
+      padding: 10px 20px;
+      background-color: #0033cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .form-box button:hover {
+      background-color: #001a66;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RideReady</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Vehicles</a>
+      <a href="#">Locations</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#" style="border: 1px solid white; padding: 5px 10px;">Sign In</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Find Your Perfect Ride</h2>
+    <p>Choose from our wide selection of vehicles for any occasion</p>
+
+    <div class="form-box">
+      <form>
+        <input type="text" placeholder="Pick-up Location" value="New York City"><br/>
+        <input type="date" placeholder="Pick-up Date"><br/>
+        <input type="date" placeholder="Return Date"><br/>
+        <select>
+          <option>All Vehicles</option>
+          <option>SUV</option>
+          <option>Luxury</option>
+          <option>Economy</option>
+          <option>Truck</option>
+        </select><br/>
+        <button type="submit">Search Vehicles</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
